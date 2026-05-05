@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Parabéns! Seu acesso está confirmado | Saúde na Tigela</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta Pixel — Evento Purchase (descomentar com ID real) -->
+  <!--
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID');
+  fbq('track', 'PageView');
+  fbq('track', 'Purchase', {
+    content_name: 'Saúde na Tigela na Prática',
+    content_category: 'Pets & Nutrição',
+    value: 297.00,
+    currency: 'BRL',
+  });
+  </script>
+  -->
+
+  <style>
+    .thankyou-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 60px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 20%, rgba(143,163,126,.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 30% 80%, rgba(201,123,94,.06) 0%, transparent 50%),
+        var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thankyou-card {
+      max-width: 650px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      padding: 60px 48px;
+      box-shadow: 0 20px 60px rgba(47,58,44,.08);
+      border: 1px solid var(--sage-whisper);
+      position: relative;
+      z-index: 2;
+    }
+
+    .thankyou-emoji {
+      font-size: 4rem;
+      margin-bottom: 16px;
+      display: inline-block;
+      animation: bounce 1s ease infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .thankyou-card h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    .thankyou-card > p {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      margin-bottom: 24px;
+    }
+
+    .steps-box {
+      background: var(--sage-whisper);
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin: 32px 0;
+      text-align: left;
+    }
+
+    .steps-box h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: var(--ink);
+    }
+
+    .step-item {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(143,163,126,.2);
+      font-size: 1.05rem;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      color: var(--ink);
+    }
+    .step-item:last-child { border-bottom: none; }
+
+    .step-num {
+      background: var(--sage);
+      color: #fff;
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .whatsapp-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border-radius: 50px;
+      margin-top: 24px;
+      transition: all .3s ease;
+      box-shadow: 0 4px 16px rgba(37,211,102,.3);
+    }
+    .whatsapp-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(37,211,102,.45);
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      top: -10px;
+      z-index: 10;
+      animation: confetti-fall linear forwards;
+      pointer-events: none;
+    }
+    @keyframes confetti-fall {
+      to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+
+    @media (max-width:768px) {
+      .thankyou-card { padding: 40px 24px; }
+      .thankyou-card h1 { font-size: 2rem; }
+      .steps-box { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">Saúde <span>na Tigela</span></a>
+    </div>
+  </header>
+
+  <section class="thankyou-page">
+    <div class="container">
+      <div class="thankyou-card">
+        <div class="thankyou-emoji">🎉</div>
+        <h1>Parabéns! Seu acesso está <span class="highlight-italic">confirmado.</span></h1>
+        <p>A tigela do seu pet nunca mais será a mesma. Você acabou de dar o passo mais importante para a saúde dele.</p>
+
+        <div class="steps-box">
+          <h3>✦ Próximos passos:</h3>
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <span>Verifique seu <strong>e-mail</strong> — seu acesso à área de membros foi enviado</span>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <span>Acesse o <strong>Módulo 1</strong> e comece sua jornada de transformação</span>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <span>Entre no <strong>Grupo VIP do WhatsApp</strong> — o link está na área de membros</span>
+          </div>
+        </div>
+
+        <p class="expert-signature" style="font-size:1.8rem;">com carinho, Jhê ♡</p>
+
+        <!-- Descomentar quando tiver o link do grupo WhatsApp -->
+        <!--
+        <a href="https://chat.whatsapp.com/LINK_DO_GRUPO" class="whatsapp-cta" target="_blank">
+          💬 Entrar no Grupo VIP
+        </a>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="index.html" class="logo">Saúde <span>na Tigela</span></a>
+      <p>© 2026 Saúde na Tigela. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Confetti celebration
+    document.addEventListener("DOMContentLoaded", () => {
+      const colors = ["#8FA37E", "#C97B5E", "#B8924A", "#E8B69C", "#C4D0B5"];
+      const shapes = ["●", "■", "▲", "♦", "★"];
+      for (let i = 0; i < 50; i++) {
+        const el = document.createElement("div");
+        el.className = "confetti";
+        el.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.fontSize = (Math.random() * 14 + 8) + "px";
+        el.style.color = colors[Math.floor(Math.random() * colors.length)];
+        el.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        el.style.animationDelay = (Math.random() * 2) + "s";
+        document.body.appendChild(el);
+      }
+    });
+  </script>
+</body>
+</html>

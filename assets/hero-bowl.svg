@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E8EDE0"/>
+      <stop offset="100%" stop-color="#C4D0B5"/>
+    </radialGradient>
+    <radialGradient id="bowl" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8B69C"/>
+      <stop offset="100%" stop-color="#C97B5E"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" rx="24" fill="url(#bg1)"/>
+  <!-- Table surface -->
+  <rect x="0" y="450" width="800" height="350" rx="0" fill="#8B6F47" opacity=".15"/>
+  <!-- Bowl -->
+  <ellipse cx="400" cy="420" rx="220" ry="80" fill="url(#bowl)" opacity=".9"/>
+  <ellipse cx="400" cy="400" rx="200" ry="70" fill="#FAF6EE"/>
+  <!-- Food items in bowl -->
+  <circle cx="340" cy="380" r="30" fill="#6B7F5C" opacity=".8"/>
+  <circle cx="400" cy="370" r="25" fill="#C97B5E" opacity=".7"/>
+  <circle cx="460" cy="385" r="28" fill="#E8B69C" opacity=".8"/>
+  <circle cx="370" cy="400" r="20" fill="#B8924A" opacity=".6"/>
+  <circle cx="430" cy="395" r="22" fill="#8FA37E" opacity=".7"/>
+  <!-- Steam lines -->
+  <path d="M360 340 Q365 310 360 280" stroke="#6B7F5C" stroke-width="3" fill="none" opacity=".3"/>
+  <path d="M400 330 Q405 295 400 260" stroke="#6B7F5C" stroke-width="3" fill="none" opacity=".25"/>
+  <path d="M440 335 Q445 305 440 275" stroke="#6B7F5C" stroke-width="3" fill="none" opacity=".3"/>
+  <!-- Hearts -->
+  <text x="320" y="250" font-size="28" opacity=".4">♡</text>
+  <text x="460" y="230" font-size="22" opacity=".3">♡</text>
+  <text x="380" y="210" font-size="18" opacity=".25">♡</text>
+  <!-- Dog silhouette peeking -->
+  <ellipse cx="650" cy="350" rx="80" ry="100" fill="#B8924A" opacity=".25"/>
+  <ellipse cx="620" cy="280" rx="50" ry="60" fill="#B8924A" opacity=".25"/>
+  <circle cx="610" cy="270" r="6" fill="#2F3A2C" opacity=".3"/>
+  <ellipse cx="630" cy="300" rx="12" ry="8" fill="#2F3A2C" opacity=".2"/>
+  <!-- Leaf decorations -->
+  <path d="M100 200 Q130 170 120 140" stroke="#8FA37E" stroke-width="2" fill="none" opacity=".4"/>
+  <path d="M105 195 Q120 180 115 160" stroke="#8FA37E" stroke-width="2" fill="none" opacity=".3"/>
+  <path d="M700 600 Q680 570 690 540" stroke="#8FA37E" stroke-width="2" fill="none" opacity=".4"/>
+  <!-- Title -->
+  <text x="400" y="560" text-anchor="middle" font-family="serif" font-size="36" fill="#2F3A2C" opacity=".6" font-style="italic">Alimentação Natural</text>
+  <text x="400" y="600" text-anchor="middle" font-family="serif" font-size="24" fill="#6B7F5C" opacity=".5">para pets felizes</text>
+</svg>

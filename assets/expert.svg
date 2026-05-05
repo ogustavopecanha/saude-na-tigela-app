@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8EDE0"/>
+      <stop offset="100%" stop-color="#C4D0B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" rx="20" fill="url(#bg)"/>
+  <!-- Person silhouette -->
+  <circle cx="300" cy="220" r="90" fill="#8FA37E" opacity=".2"/>
+  <circle cx="300" cy="180" r="55" fill="#C97B5E" opacity=".25"/>
+  <ellipse cx="300" cy="350" rx="100" ry="130" fill="#FAF6EE" opacity=".3"/>
+  <!-- Lab coat -->
+  <rect x="220" y="280" width="160" height="200" rx="20" fill="#FAF6EE" opacity=".5"/>
+  <!-- Stethoscope hint -->
+  <path d="M270 300 Q260 350 280 380" stroke="#B8924A" stroke-width="2.5" fill="none" opacity=".3"/>
+  <!-- Small dog silhouette -->
+  <ellipse cx="420" cy="400" rx="45" ry="55" fill="#E8B69C" opacity=".3"/>
+  <ellipse cx="420" cy="360" rx="30" ry="35" fill="#E8B69C" opacity=".3"/>
+  <circle cx="412" cy="352" r="4" fill="#2F3A2C" opacity=".25"/>
+  <!-- Paw print -->
+  <text x="180" cy="450" font-size="32" fill="#6B7F5C" opacity=".2">🐾</text>
+  <!-- Name -->
+  <text x="300" y="550" text-anchor="middle" font-family="serif" font-size="28" fill="#2F3A2C" opacity=".6">Dra. Jhennifer</text>
+  <text x="300" y="585" text-anchor="middle" font-family="serif" font-size="22" fill="#6B7F5C" opacity=".5" font-style="italic">Espírito Santo</text>
+  <text x="300" y="620" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#C97B5E" opacity=".5">@medicadopet</text>
+  <!-- Leaf decoration -->
+  <path d="M100 150 Q120 120 110 90" stroke="#8FA37E" stroke-width="2" fill="none" opacity=".3"/>
+  <path d="M500 600 Q520 570 510 540" stroke="#8FA37E" stroke-width="2" fill="none" opacity=".3"/>
+</svg>
